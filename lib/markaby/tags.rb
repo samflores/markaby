@@ -21,7 +21,7 @@ module Markaby
   AttrHAlign = [:align, :char, :charoff]
   AttrVAlign = [:valign]
   Attrs      = AttrCore + AttrI18n + AttrEvents
-  
+
   AttrsBoolean = [
     :checked, :disabled, :multiple, :readonly, :selected, # standard forms
     :autofocus, :required, :novalidate, :formnovalidate, # HTML5 forms
@@ -264,6 +264,7 @@ module Markaby
       :ol => [:reversed],
       :object => [:typemustmatch],
       :output => [:form],
+      :progress => [:max, :value],
       :script => [:async],
       :select => [:autofocus, :form, :required],
       :style => [:scoped],
